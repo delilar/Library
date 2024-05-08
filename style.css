@@ -93,8 +93,21 @@ input {
     margin-bottom: 1rem;
     border: none;
     font-size: 22px;
+    border-radius: 0.5rem;
 }
 
 .close-pop-up {
     border-color: transparent;
+}
+
+.confirm-pop-up {
+    border-color: transparent;
+}
+
+.close-pop-up:hover {
+    background-color: #f57979;
+}
+
+.confirm-pop-up:hover {
+    background-color: #7ff579;
 }

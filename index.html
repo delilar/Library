@@ -21,7 +21,7 @@
             <label for="pages">Количество страниц</label>
             <input class="pages" name="pages" type="number">
         </div>
-        <button type="button" class="confirm-pop-up">Закрыть</button>
+        <button type="button" class="confirm-pop-up">Добавить</button>
         <button type="button" class="close-pop-up">Закрыть</button>
     </dialog>
     <h1>Book Library</h1>
@@ -37,15 +37,15 @@
                         <th>Количество страниц</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
+                <tbody id="table-body">
+                    <tr class="table-child-1">
                         <td>Пелевин В.О.</td>
                         <td>Путешествие в Элевсин</td>
                         <td>Эксмо</td>
                         <td>2023</td>
                         <td>480</td>
                     </tr>
-                    <tr>
+                    <tr class="table-child-2">
                         <td>Пелевин В.О.</td>
                         <td>Чапаев и Пустота</td>
                         <td>Эксмо</td>
@@ -56,8 +56,8 @@
             </table>
             <div class="buttons">
                 <button class="add" type="submit">Добавить</button>
-                <button class="delete" type="submit">Удалить</button>
-                <button class="delete" type="submit">Удалить</button>
+                <button class="delete button-child-1" type="submit">Удалить</button>
+                <button class="delete button-child-2" type="submit">Удалить</button>
             </div>
         </div>
     </div>
