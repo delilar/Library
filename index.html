@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <dialog id="pop-up">
+        <h3>Данные для ввода</h3>
+        <div class="input-wrapper">
+            <label for="author">Автор</label>
+            <input class="author" name="author" type="text">
+            <label for="name">Название</label>
+            <input class="name" name="name" type="text">
+            <label for="publishing">Издательство</label>
+            <input class="publishing" name="publishing" type="text">
+            <label for="year">Год издания</label>
+            <input class="year" name="year" type="number">
+            <label for="pages">Количество страниц</label>
+            <input class="pages" name="pages" type="number">
+        </div>
+        <button type="button" class="confirm-pop-up">Закрыть</button>
+        <button type="button" class="close-pop-up">Закрыть</button>
+    </dialog>
     <h1>Book Library</h1>
     <div class="library">
         <div class="table-button">
@@ -38,6 +55,7 @@
                 </tbody>
             </table>
             <div class="buttons">
+                <button class="add" type="submit">Добавить</button>
                 <button class="delete" type="submit">Удалить</button>
                 <button class="delete" type="submit">Удалить</button>
             </div>
