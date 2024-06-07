@@ -94,6 +94,20 @@ input {
     border: none;
     font-size: 22px;
     border-radius: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    outline: none;
+}
+
+input:-webkit-autofill:invalid:not(:focus) {
+    box-shadow: 0 0 0 30px #eca9a923 inset !important;
+}
+
+input:valid:not(:focus) {
+    box-shadow: 0 0 0 30px #a9ecec40 inset !important;
+}
+
+input:invalid:not(:focus):not(:empty) {
+    box-shadow: 0 0 0 30px #eca9a923 inset !important;
 }
 
 .close-pop-up {
@@ -111,3 +125,17 @@ input {
 .confirm-pop-up:hover {
     background-color: #7ff579;
 }
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
