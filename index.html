@@ -11,15 +11,15 @@
         <h3>Данные для ввода</h3>
         <div class="input-wrapper">
             <label for="author">Автор</label>
-            <input class="author" name="author" type="text">
+            <input class="author" name="author" type="text" required>
             <label for="name">Название</label>
-            <input class="name" name="name" type="text">
+            <input class="name" name="name" type="text" required>
             <label for="publishing">Издательство</label>
-            <input class="publishing" name="publishing" type="text">
+            <input class="publishing" name="publishing" type="text" required>
             <label for="year">Год издания</label>
-            <input class="year" name="year" type="number">
+            <input class="year" name="year" type="number" min="0" max="5000" required>
             <label for="pages">Количество страниц</label>
-            <input class="pages" name="pages" type="number">
+            <input class="pages" name="pages" type="number" min="0" max="5000" required>
         </div>
         <button type="button" class="confirm-pop-up">Добавить</button>
         <button type="button" class="close-pop-up">Закрыть</button>
